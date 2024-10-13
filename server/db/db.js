@@ -1,24 +1,16 @@
-const mysql = require("mysql");
-const path = require("path");
 
-require("dotenv").config(path.join(__dirname+'../../.env'));
+// // mongoose.connect(`mongodb://${process.env.DB_Host}:${process.env.DB_PORT}/${process.env.DB_Database}`);
+// // mongoose.connect(`mongodb://${process.env.DB_Host}:${process.env.DB_PORT}/test`);
+// // mongoose.connect('mongodb://127.0.0.1:27017/mong_db')
 
-const pool = mysql.createPool({
-  host: process.env.DB_Host,
-  user: process.env.DB_User,
-  password: process.env.DB_Password,
-  database: process.env.DB_Database,
-  waitForConnections: true,
-  connectionLimit: 10,
-  port: process.env.DB_PORT,
-});
+// const { Schema } = mongoose;
 
-pool.getConnection((err, connection) => {
-  if (err) {
-    throw err;
-  }
-  console.log("Database connected successfully");
-  connection.release();
-})
+// const guestSchema = new Schema({
+//   id: Number,
+//   name: String,
+//   attending: Boolean,
+//   email: String,
+//   plusOne: Number
+// })
 
-module.exports = pool;
+// const Guests = mongoose.model('Guests', guestSchema);

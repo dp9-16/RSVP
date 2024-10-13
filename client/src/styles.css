@@ -23,13 +23,13 @@ a {
   justify-content: space-between;
   align-items: center;
   z-index: 10;
+  box-shadow: 1px 1px 1px #888888;
 }
 .logo {
   min-width: 150px;
   max-width: 300px;
   width: 20vw;
   margin-left: 20px;
-  /* cursor: pointer; */
 }
 .links {
   display:flex;
@@ -148,12 +148,6 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: center;
 }
-.line {
-  width: 150px;
-  height: 5px;
-  background: #3b719f;
-  margin: -10px 30px;
-}
 .homeInfo {
   margin-top: 100px;
 }
@@ -162,7 +156,7 @@ input:checked + .slider:before {
 }
 
 .gallery {
-  margin-top: 52px;
+  margin-top: 102px;
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -175,6 +169,9 @@ input:checked + .slider:before {
   max-width: 1000px;
   max-height: 750px;
   z-index: 3;
+  padding: 75px 0px 150px 0px;
+  background-color: #FFFDFA;
+  box-shadow: 5px 7px 4px #888888;
 }
 .swiper-slide {
   text-align: center;
@@ -189,16 +186,13 @@ input:checked + .slider:before {
   max-width:1000px;
   max-height: 750px;
   object-fit: cover;
-  border: 30px solid #FFFDFA;
-  border-bottom-width: 100px;
-  border-top-width: 50px;
 }
 .vertical {
   margin-top: 100px;
   margin-bottom: 100px;
   display: grid;
   width:80vw;
-  grid-template-columns: repeat(3, 20vw);
+  grid-template-columns: repeat(3, 23vw);
   row-gap: 100px;
   column-gap: 50px;
   align-items: center;
@@ -206,10 +200,16 @@ input:checked + .slider:before {
 }
 .vCont {
   display: flex;
+  place-self: center;
   flex-direction: column;
   align-items: center;
   position: relative;
   z-index: 3;
+  width: calc(20vw + 20px);
+  max-width: 440px;
+  padding: 40px 0px 80px 0px;
+  background-color: #FFFDFA;
+  box-shadow: 5px 7px 4px #888888;
 }
 .vCont p {
   position: absolute;
@@ -223,9 +223,6 @@ input:checked + .slider:before {
   height: 30vw;
   max-width:400px;
   max-height: 600px;
-  border: 20px solid #FFFDFA;
-  border-top-width: 40px;
-  border-bottom-width: 80px;
   object-fit: cover;
 }
 
@@ -235,9 +232,11 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 100px;
 }
 .title {
-  font-size: 36px;
+  font-size: 72px;
+  font-family: 'Allura';
   margin-top: 100px;
 }
 .recImg {
@@ -245,10 +244,13 @@ input:checked + .slider:before {
   margin-top: 100px;
   max-width: 600px;
   object-fit: contain;
+  box-shadow: 5px 7px 4px #888888;
 }
-.block {
-  margin: 50px;
-  width:300px;
+.line {
+  width: 200px;
+  height:2px;
+  background: #3b719f;
+  margin-bottom: 75px;
 }
 .info {
   margin: 10px 0;
@@ -262,19 +264,80 @@ input:checked + .slider:before {
   align-items: center;
 }
 .rsvp > form {
-  /* height: 10px; */
-  /* width: 10px; */
+  display:flex;
+  background-color: #FFFDFA;
+  flex-direction: column;
+  width: 500px;
+  height: 600px;
   border: 1px solid #3b719f;
-  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 7px 4px #888888;
+  font-size: 21px;
+  position: relative;
 }
-
-#test {
-  height: 10px;
-  width: 10px;
-  background-color: red;
+button {
+  position: absolute;
+  bottom: 50px;
+  width: 385px;
+  height: 75px;
+  background-color: #3b719f;
+  color:#FFFDFA;
+  border:none;
+  box-shadow: 5px 7px 4px #888888;
+  cursor: pointer;
+  font-size: 21px;
+  border-radius: 15px;
+  transition: 0.3s;
 }
-#test2 {
-  height: 10px;
-  width: 10px;
-  background-color: blue;
+button:hover {
+  transform: scale(1.01);
+}
+.formContent {
+  padding: 50px 0 0 50px;
+}
+.group {
+  display:flex;
+  width: 85%;
+  align-items: center;
+  justify-content: space-between;
+}
+.radio {
+  display:flex;
+  align-items: center;
+}
+.rad {
+  cursor: pointer;
+}
+.formInfo {
+  width:85%;
+  color: #3b719f;
+  border: none;
+  border-bottom: 1px solid #3b719f;
+  background-color: #FFFDFA;
+  margin-bottom: 20px;
+  height: 30px;
+}
+.num {
+  width: 30px;
+  color: #3b719f;
+  border: none;
+  height: 30px;
+  border-bottom: 1px solid #3b719f;
+  background-color: #FFFDFA;
+}
+.registered {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.registered > p{
+  width: 80%;
+}
+.rInfo {
+  margin: 10px 0 10px 0;
+}
+.rInfo > p{
+  margin: 5px;
 }

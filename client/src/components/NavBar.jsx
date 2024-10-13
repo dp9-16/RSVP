@@ -7,7 +7,7 @@ const NavBar = (props) => {
     <>
       <div className="bar">
         <div className="logo">
-          J|G
+          {/* J|G */}
         </div>
         {!props.bool ? (
           <div className="links">
@@ -25,12 +25,12 @@ const NavBar = (props) => {
         </div>
         )}
         <div className="langSelect">
-          <p>Eng</p>
+          {/* <p>Eng</p>
           <label className="switch">
             <input type="checkbox" id="lang" onClick={props.set}/>
             <span className="slider round"></span>
           </label>
-          <p>한</p>
+          <p>한</p> */}
         </div>
       </div>
     </>

@@ -20,6 +20,7 @@ const Gallery = (props) => {
             dynamicBullets: true,
             clickable: true,
           }}
+          speed={1500}
           spaceBetween={60}
           loop={true}
           slidesPerView={1}
