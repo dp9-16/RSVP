@@ -9,17 +9,21 @@ const app = express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "../client/dist")));
 
-app.get('/test', async (req, res) => {
+app.get('/guestNum', async (req, res) => {
   try {
-    let { data, error } = await supabase
+    let { data: Guests, err} = await supabase
       .from('Guests')
-      .select('*')
-      .eq('name','test')
-    if (error) throw error;
-    res.status(200).send(data);
+      .select('guests')
+      .eq('attend', true)
+    if (err) throw err;
+    let sum = 0;
+    for (ppl of Guests) {
+      sum += ppl['guests'];
+    }
+    res.status(200).json({sum: sum});
   } catch (err) {
     console.error(err.message);
-    res.status(400).json({error: 'Error'});
+    res.status(400).json({error: 'error'})
   }
 })
 
@@ -48,6 +52,6 @@ app.get('*', (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT);
-
-console.log(`Listening at http://${process.env.DB_Host}:${PORT}`)
+app.listen(PORT, process.env.DB_Host, () => {
+  console.log(`Listening at http://${process.env.DB_Host}:${PORT}`)
+});
