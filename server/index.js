@@ -9,8 +9,22 @@ const app = express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "../client/dist")));
 
-app.get('/test', (req, res) => {
-  console.log(process.env.DB_Host)
+app.get('/guestNum', async (req, res) => {
+  try {
+    let { data: Guests, err} = await supabase
+      .from('Guests')
+      .select('guests')
+      .eq('attend', true)
+    if (err) throw err;
+    let sum = 0;
+    for (ppl of Guests) {
+      sum += ppl['guests'];
+    }
+    res.status(200).json({sum: sum});
+  } catch (err) {
+    console.error(err.message);
+    res.status(400).json({error: 'error'})
+  }
 })
 
 app.post('/register', async (req, res) => {
