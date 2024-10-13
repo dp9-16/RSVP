@@ -9,18 +9,8 @@ const app = express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "../client/dist")));
 
-app.get('/test', async (req, res) => {
-  try {
-    let { data, error } = await supabase
-      .from('Guests')
-      .select('*')
-      .eq('name','test')
-    if (error) throw error;
-    res.status(200).send(data);
-  } catch (err) {
-    console.error(err.message);
-    res.status(400).json({error: 'Error'});
-  }
+app.get('/test', (req, res) => {
+  console.log(process.env.DB_Host)
 })
 
 app.post('/register', async (req, res) => {
@@ -48,6 +38,6 @@ app.get('*', (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT);
-
-console.log(`Listening at http://${process.env.DB_Host}:${PORT}`)
+app.listen(PORT, process.env.DB_Host, () => {
+  console.log(`Listening at http://${process.env.DB_Host}:${PORT}`)
+});
