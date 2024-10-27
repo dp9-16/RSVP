@@ -30,8 +30,7 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
     "style-loader": "^4.0.0",
-    "supabase": "^1.204.3",
-    "swiper": "^11.1.14"
+    "supabase": "^1.204.3"
   },
   "version": "1.0.0",
   "main": "index.js",
