@@ -469,6 +469,7 @@ body {
     width: 100vw;
     margin: 0;
     font-family: against;
+    padding: 0;
   }
   .app {
     width: 100%;
