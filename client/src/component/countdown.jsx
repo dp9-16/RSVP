@@ -22,8 +22,8 @@ const Countdown = () => {
   let seconds = Math.floor(timeRemaining % 60);
   return  (
     <div className="countdownCont">
-      <p><i>November. 23. 2024</i></p>
-      <p>7:00 PM</p>
+      <p className="timeDetail"><i>November. 23. 2024</i></p>
+      <p className="timeDetail">7:00 PM</p>
       <div className="timerCont">
         <div className="time">
           <p>{`${days}`.padStart(2,0)}</p>
