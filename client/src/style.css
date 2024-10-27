@@ -617,6 +617,9 @@ table {
     align-items: center;
     margin-bottom: 5vh;
   }
+  .timeDetail {
+    margin-bottom:5vh;
+  }
   .timerCont {
     display: flex;
     font-size: 32px;
