@@ -463,7 +463,7 @@ body {
   body {
     /* background-color: #FBFAF5; */
     background: linear-gradient(to right, #FBFAF5, #FBFAF5 0%, #FAE7EB 100%);
-    max-width:100%;
+    max-width:100vw;
     overflow-x: hidden;
     color: #FBFAF5;
     width: 100vw;
