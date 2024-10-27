@@ -831,12 +831,10 @@ table {
     text-align: center;
     margin-bottom: 5vh;
   }
-  .reception > a {
-    margin-bottom: 10px;
-  }
   .detail {
     font-size: 12px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .gmap {
     width: 90%;
