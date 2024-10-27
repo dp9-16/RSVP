@@ -595,7 +595,7 @@ table {
   .date {
     font-size: 20px;
     margin-top: -20px;
-    margin-bottom: 9vh;
+    margin-bottom: 13vh;
     color: #000057;
   }
   .welcome {
@@ -779,7 +779,7 @@ table {
   }
   .react-calendar__navigation {
     display: flex;
-    height: 44px;
+    height: 0;
     background: rgb(0, 0, 87,0.1);
     margin-bottom: 1em;
     font-family: inherit;
