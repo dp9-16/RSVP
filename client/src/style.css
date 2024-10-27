@@ -464,6 +464,7 @@ body {
     /* background-color: #FBFAF5; */
     background: linear-gradient(to right, #FBFAF5, #FBFAF5 0%, #FAE7EB 100%);
     max-width:100%;
+    overflow-x: hidden;
     color: #FBFAF5;
     width: 100vw;
     margin: 0;
@@ -514,12 +515,11 @@ body {
   .titleOne {
     margin: 5px;
     justify-self: center;
-    font-size: 36px;
-    color: black;
+    font-size: 34px;
   }
   .titleTwo {
     width: 100vw;
-    font-size: 20px;
+    font-size: 18px;
     justify-self: center;
     text-align: center;
   }
