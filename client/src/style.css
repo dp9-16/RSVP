@@ -564,7 +564,7 @@ table {
   .titleTwo {
     width: 100vw;
     font-size: 18px;
-/*     justify-self: center; */
+    justify-self: center;
     text-align: center;
   }
   .poster {
