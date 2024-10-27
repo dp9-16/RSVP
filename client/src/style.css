@@ -757,7 +757,8 @@ table {
     bottom: 20px;
     width: 300px;
     max-width: 100%;
-    background: rgb(0, 0, 87,0.1);
+/*     background: rgb(0, 0, 87,0.1); */
+    background: rgb(0, 0, 87);
     border: none;
     font-family: against;
     line-height: 0.75em;
