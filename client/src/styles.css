@@ -4,7 +4,7 @@ body {
   color: #3b719f;
   background-color:#F0EAD6;
 }
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
 }
 a {
@@ -340,4 +340,4 @@ button:hover {
 }
 .rInfo > p{
   margin: 5px;
-}
+} */

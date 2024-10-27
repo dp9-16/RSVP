@@ -34,8 +34,8 @@ app.post('/register', async (req, res) => {
       .select('*')
       .eq('name',req.body.name)
     if (error) throw error;
-    if (!data[0]["id"]) {
-      let { dat, err } = await supabase.from('Guests').insert({name: req.body.name, email: req.body.email, attend: req.body.attend, guests: req.body.guests})
+    if (!data[0]) {
+      let { dat, err } = await supabase.from('Guests').insert({name: req.body.name, email: req.body.email, attend: req.body.attend, guests: req.body.guests, guestNames: req.body.guestNames})
       if (err) throw err;
       res.json({match: false});
     } else {
