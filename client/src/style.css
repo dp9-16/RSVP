@@ -537,7 +537,7 @@ table {
   }
   .second {
     margin-top: 0;
-    margin-bottom: 5vh;
+    margin-bottom: 10vh;
   }
 
 /*#region Hook*/
@@ -660,7 +660,7 @@ table {
     z-index: 3;
     position: absolute;
     width: 70vw;
-    bottom: 0;
+    bottom: 5vh;
     left: 30px;
     border-top: 10px solid #FBFAF5;
     border-right: 10px solid #FBFAF5;
