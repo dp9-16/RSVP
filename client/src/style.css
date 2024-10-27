@@ -833,6 +833,7 @@ table {
   }
   .detail {
     font-size: 12px;
+    margin-bottom: 20px;
   }
   .gmap {
     width: 90%;
