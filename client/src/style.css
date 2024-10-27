@@ -564,10 +564,8 @@ table {
     font-size: 34px;
   }
   .titleTwo {
-/*     width: 100vw; */
+    margin-top: 20px;
     font-size: 18px;
-/*     justify-self: center; */
-/*     text-align: center; */
   }
   .poster {
     width:100%;
@@ -647,7 +645,7 @@ table {
     position: relative;
     height: 90vh;
     width: 100vw;
-    margin-bottom: 5vh;
+    margin-bottom: 10vh;
   }
   .blockTextureTwo{
     width: 300px;
@@ -662,7 +660,7 @@ table {
     z-index: 3;
     position: absolute;
     width: 80vw;
-    bottom: 5vh;
+    bottom: 0;
     left: 15px;
     border-top: 10px solid #FBFAF5;
     border-right: 10px solid #FBFAF5;
