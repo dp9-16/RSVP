@@ -780,6 +780,7 @@ table {
   .react-calendar__navigation {
     display: flex;
     height: 44px;
+    background: transparent;
 /*     background: rgb(0, 0, 87,0); */
     margin-bottom: 1em;
     font-family: inherit;
