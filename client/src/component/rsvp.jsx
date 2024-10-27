@@ -3,7 +3,7 @@ import axios from 'axios';
 import RSVPForm from "./rsvpform"
 
 const RSVP = () => {
-  const [ submitted, setSubmitted ] = React.useState(true);
+  const [ submitted, setSubmitted ] = React.useState(false);
   const [ name, setName ] = React.useState('');
   const [ email, setEmail ] = React.useState('');
   const [ attend, setAttend ] = React.useState(false);
