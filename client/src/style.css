@@ -555,15 +555,15 @@ table {
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75%;
+/*     width: 75%; */
   }
   .titleOne {
     margin: 5px;
-    justify-self: center;
+/*     justify-self: center; */
     font-size: 34px;
   }
   .titleTwo {
-    width: 100vw;
+/*     width: 100vw; */
     font-size: 18px;
     justify-self: center;
     text-align: center;
