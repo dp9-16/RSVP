@@ -507,6 +507,7 @@ table {
     /* background-color: #FBFAF5; */
     background: linear-gradient(to right, #FBFAF5, #FBFAF5 0%, #FAE7EB 100%);
     overflow-x: hidden;
+    overflow-x: clip !important;
     color: #FBFAF5;
     margin: 0;
     font-family: against;
