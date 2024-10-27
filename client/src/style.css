@@ -555,6 +555,7 @@ table {
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 /*     width: 75%; */
   }
   .titleOne {
@@ -565,8 +566,8 @@ table {
   .titleTwo {
 /*     width: 100vw; */
     font-size: 18px;
-    justify-self: center;
-    text-align: center;
+/*     justify-self: center; */
+/*     text-align: center; */
   }
   .poster {
     width:100%;
