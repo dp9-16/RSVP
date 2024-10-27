@@ -755,8 +755,8 @@ table {
   }
   .react-calendar {
     position:absolute;
-    bottom: 7vh;
-    width: 350px;
+    bottom: 12px;
+    width: 300px;
     max-width: 100%;
     background: rgb(0,0,0,.2);
     border: none;
