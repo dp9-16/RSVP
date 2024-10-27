@@ -779,7 +779,7 @@ table {
   }
   .react-calendar__navigation {
     display: flex;
-    height: 0;
+    height: 10px;
     background: rgb(0, 0, 87,0.1);
     margin-bottom: 1em;
     font-family: inherit;
