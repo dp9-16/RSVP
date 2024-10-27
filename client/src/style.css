@@ -659,8 +659,8 @@ table {
     width: 80vw;
     bottom: 5vh;
     left: 15px;
-    border-top: 20px solid #FBFAF5;
-    border-right: 20px solid #FBFAF5;
+    border-top: 10px solid #FBFAF5;
+    border-right: 10px solid #FBFAF5;
   }
   .backImg {
     position: absolute;
