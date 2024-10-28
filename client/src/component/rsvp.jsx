@@ -13,9 +13,10 @@ const RSVP = () => {
   const formSubmit = (event) => {
     event.preventDefault();
     var count = 0;
+    var g = guests;
     if (attend) {
-      count = guests + 1;
-      console.log(guests, count);
+      count = g + 1;
+      console.log( count);
     }
     axios.post('/register', {name: name, email: email, attend: attend, guests: count, guestNames: gnames})
     .then(resp => {
