@@ -51,7 +51,7 @@ const App = () => {
         </div>
         <div>
           <img className="gridImg" loading="lazy" src={require("./assets/images/v9.jpeg")} />
-          <img className="gridImg" loading="lazy" src={require("./assets/images/client/src/assets/images/temp_1728538557631.-1035770434.jpeg")} />
+          <img className="gridImg" loading="lazy" src={require("./assets/images/client/temp_1728538557631.-1035770434.jpeg")} />
         </div>
       </div>
       <div className="pageBreak second">
