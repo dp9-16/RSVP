@@ -74,7 +74,7 @@ const RSVP = () => {
             <p>You're All Set!</p>
             <p>Thank you for your RSVP to Jennifer Park and Gene Kim's Wedding!</p>
             <div className="rInfo">
-              <p>Wednesday. Nov 23. 2024</p>
+              <p>Saturday. Nov 23. 2024</p>
               <p>7:00 PM</p>
               <br></br>
               <p>Reception House | Wedding Venue</p>
