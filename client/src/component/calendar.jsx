@@ -12,6 +12,8 @@ const Cal = () => {
         minDate={new Date(2024,10, 1)}
         maxDate={new Date(2024,10, 30)}
         value={new Date(2024, 10, 23)}
+        prevLabel={null}
+        nextLabel={null}
         prev2Label={null}
         next2Label={null}
         onClickMonth={null} />
