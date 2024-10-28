@@ -783,6 +783,7 @@ table {
     color: rgb(0, 0, 87,0);
     margin-bottom: 1em;
     font-family: inherit;
+    font-size: 0.85em;
   }
   .react-calendar__navigation__arrow {
     background-color: rgb(0, 0, 87,0.1);
